@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light')
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #00ace6;
+	text-align: center;
+	box-sizing: border-box;
+	color: #FFF;
+	font-family: 'Shadows Into Light', cursive;
+}
+h1 {
+	text-transform: uppercase;
+	margin: 30px auto;
+}
+.tweet {
+	text-decoration: none;
+	color: #fff;
+	width: 300px;
+	height: 90px;
+	background: #11bdf7;
+	border: 2px;
+	font-size: 22px;
+}
+.tweet:hover {
+	color: #1DA1F2;
+	background: #fff;
+}
+.trigger {
+    width: 160px;
+    height: 40px;
+    background: #11bdf7;
+    color: #fff;
+    font-size: 18px; 
+}
+.buttons {
+	margin: 10px auto;
+	display: block;
+	padding-top: 45px;
+	cursor: pointer;
+}
