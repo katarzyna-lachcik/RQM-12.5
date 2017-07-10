@@ -6,9 +6,8 @@ var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&fi
 
 //Pobieranie cytatu
 function getQuote() {
-    $.getJSON(quoteUrl, createTweet);
     $.getJSON(prefix + quoteUrl, createTweet);
-	$.ajaxSetup({ cache: false });
+    $.ajaxSetup({ cache: false });
 }
 
 //Tworzenie tweeta
@@ -26,20 +25,20 @@ function createTweet(input) {
     var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
     
     if (tweetText.length > 140) {
-    	getQuote();
-	} else {
-	    var tweet = tweetLink + encodeURIComponent(tweetText);
-	    $('.quote').text(quoteText);
-	    $('.author').text("Author: " + quoteAuthor);
-	    $('.tweet').attr('href', tweet);
-	}
+        getQuote();
+    } else {
+        var tweet = tweetLink + encodeURIComponent(tweetText);
+        $('.quote').text(quoteText);
+        $('.author').text("Author: " + quoteAuthor);
+        $('.tweet').attr('href', tweet);
+    }
 }
 
 
 $(document).ready(function() {
-	getQuote();
-	$('.trigger').click(function() {
-	    getQuote();
-	
-	})
+    getQuote();
+    $('.trigger').click(function() {
+        getQuote();
+
+    })
 });
