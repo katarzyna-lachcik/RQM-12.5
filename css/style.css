@@ -1,29 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light')
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     background: #00ace6;
     text-align: center;
     box-sizing: border-box;
     color: #FFF;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Josefin Slab', serif;
 }
 h1 {
+    padding-top: 50px;
     text-transform: uppercase;
     margin: 30px auto;
+    font-size: 40px;
 }
+h2 {
+    font-size: 30px;
+}
+.box {
+    line-height: 50px;
+}
+
 .tweet {
     text-decoration: none;
     color: #fff;
-    width: 300px;
-    height: 90px;
     background: #11bdf7;
-    border: 2px;
-    font-size: 22px;
-    }
+    font-size: 24px;
+    cursor: pointer;
+}
 .tweet:hover {
     color: #1DA1F2;
     background: #fff;
@@ -34,10 +42,8 @@ h1 {
     background: #11bdf7;
     color: #fff;
     font-size: 18px; 
-}
-.buttons {
-    margin: 10px auto;
-    display: block;
-    padding-top: 45px;
     cursor: pointer;
+}
+.btn {
+    padding-top: 45px;
 }
